@@ -5,8 +5,15 @@
   "description": "A modular, project-agnostic 3D treatment viewer: staged tooth-movement playback, tooth selection and constrained manipulation, and a URP tooth shader. Domain logic is pure C# and fully unit-tested; presentation is a thin MonoBehaviour layer.",
   "unity": "6000.0",
   "dependencies": {
-    "com.unity.render-pipelines.universal": "17.3.0"
+    "com.unity.render-pipelines.universal": "17.0.0"
   },
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "A ready-to-play scene: a full 32-tooth arch playing a sample staged treatment, with the on-screen controls overlay.",
+      "path": "Samples~/DemoScene"
+    }
+  ],
   "author": {
     "name": "Ala Abuhadbeh",
     "email": "alaa.it93@gmail.com"

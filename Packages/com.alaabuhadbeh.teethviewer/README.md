@@ -3,13 +3,26 @@
 A modular Unity package for viewing and revising a staged clear-aligner
 treatment. A 3D arch of teeth plays through treatment stages, and individual
 teeth can be selected and rotated to revise the final setup. Runs in the Unity
-editor and builds to WebGL.
+editor and builds to WebGL. Built with Unity 6 and URP.
 
-## Requirements
+## Install
 
-- Unity 6000.3+ with the Universal Render Pipeline (URP)
+Add it to any Unity project straight from GitHub:
 
-## Quick start
+1. Open **Window > Package Manager**.
+2. Click the **+** in the top-left corner and pick **Add package from git URL**.
+3. Paste this and hit Add:
+
+   `https://github.com/alaa93/teeth-viewer.git?path=/Packages/com.alaabuhadbeh.teethviewer`
+
+Want the demo scene too? Select **Teeth Viewer** in the package list, open its
+**Samples**, and click **Import** next to "Demo Scene".
+
+One thing to check: the package uses URP, so your project needs the Universal
+Render Pipeline set as the active render pipeline — otherwise the teeth render
+pink.
+
+## Running the demo project
 
 1. Open `teeth-viewer-demo/` as a Unity project.
 2. Run **TeethViewer → Build Demo Scene** from the menu bar to generate a scene
