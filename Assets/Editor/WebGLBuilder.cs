@@ -8,6 +8,8 @@ namespace AlaAbuhadbeh.TeethViewer.DemoProject.Editor
     {
         public static void Build()
         {
+            PlayerSettings.WebGL.decompressionFallback = true;
+
             var options = new BuildPlayerOptions
             {
                 scenes = new[] { "Assets/TeethViewer/TeethViewerDemo.unity" },
