@@ -1,0 +1,14 @@
+{
+  "name": "com.alaabuhadbeh.teethviewer",
+  "version": "0.1.0",
+  "displayName": "Teeth Viewer",
+  "description": "A modular, project-agnostic 3D treatment viewer: staged tooth-movement playback, tooth selection and constrained manipulation, and a URP tooth shader. Domain logic is pure C# and fully unit-tested; presentation is a thin MonoBehaviour layer.",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "17.3.0"
+  },
+  "author": {
+    "name": "Ala Abuhadbeh",
+    "email": "alaa.it93@gmail.com"
+  }
+}

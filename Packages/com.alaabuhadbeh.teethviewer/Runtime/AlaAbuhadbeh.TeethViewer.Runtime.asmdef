@@ -1,0 +1,14 @@
+{
+    "name": "AlaAbuhadbeh.TeethViewer.Runtime",
+    "rootNamespace": "AlaAbuhadbeh.TeethViewer",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
