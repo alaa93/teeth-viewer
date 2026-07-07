@@ -1,2 +1,2 @@
 # teeth-viewer
-Modular Unity teeth viewer demo for viewing 3D clear-aligner treatments with tooth selection
+Modular Unity URP package: a staged 3D clear-aligner treatment viewer with tooth selection and manipulation, built for WebGL
