@@ -31,6 +31,8 @@ namespace AlaAbuhadbeh.TeethViewer.Editor
             so.FindProperty("_toothMaterial").objectReferenceValue = GetOrCreateToothMaterial();
             so.ApplyModifiedPropertiesWithoutUndo();
 
+            new GameObject("Controls Overlay", typeof(ControlsOverlay));
+
             EditorSceneManager.SaveScene(scene, "Assets/TeethViewer/TeethViewerDemo.unity");
             Debug.Log("TeethViewer demo scene built. Press Play to see staged tooth movement; " +
                       "left-click selects a tooth, right-drag rotates it about its own axis, " +

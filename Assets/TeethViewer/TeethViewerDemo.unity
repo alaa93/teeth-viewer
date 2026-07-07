@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &87272691
+--- !u!1 &362490843
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,9 +127,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 87272694}
-  - component: {fileID: 87272693}
-  - component: {fileID: 87272692}
+  - component: {fileID: 362490846}
+  - component: {fileID: 362490845}
+  - component: {fileID: 362490844}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -137,13 +137,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &87272692
+--- !u!114 &362490844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87272691}
+  m_GameObject: {fileID: 362490843}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0500d7178049c594a9438fb3360c462c, type: 3}
@@ -157,13 +157,13 @@ MonoBehaviour:
   _zoomSpeed: 1.5
   _minDistance: 2
   _maxDistance: 15
---- !u!20 &87272693
+--- !u!20 &362490845
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87272691}
+  m_GameObject: {fileID: 362490843}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -208,13 +208,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &87272694
+--- !u!4 &362490846
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87272691}
+  m_GameObject: {fileID: 362490843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.2, z: -6}
@@ -223,7 +223,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1669845973
+--- !u!1 &475222914
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,8 +231,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1669845975}
-  - component: {fileID: 1669845974}
+  - component: {fileID: 475222917}
+  - component: {fileID: 475222916}
+  - component: {fileID: 475222915}
+  m_Layer: 0
+  m_Name: Treatment Viewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &475222915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475222914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417436079113f7a4a83cd914336503e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AlaAbuhadbeh.TeethViewer.Runtime::AlaAbuhadbeh.TeethViewer.ToothSelector
+  _camera: {fileID: 0}
+  _degreesPerPixel: 0.25
+--- !u!114 &475222916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475222914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6affd8a94fb07e4d8dc490c1c8894aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AlaAbuhadbeh.TeethViewer.Runtime::AlaAbuhadbeh.TeethViewer.TreatmentViewerController
+  _toothMaterial: {fileID: 2100000, guid: 43eb7eac305ef3a4684ed8d31b970d0b, type: 2}
+  _stageTime: 0
+  _autoPlay: 1
+  _stagesPerSecond: 0.6
+--- !u!4 &475222917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475222914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &878716795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878716797}
+  - component: {fileID: 878716796}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -240,13 +303,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!108 &1669845974
+--- !u!108 &878716796
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669845973}
+  m_GameObject: {fileID: 878716795}
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
@@ -305,13 +368,13 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!4 &1669845975
+--- !u!4 &878716797
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669845973}
+  m_GameObject: {fileID: 878716795}
   serializedVersion: 2
   m_LocalRotation: {x: 0.36964384, y: -0.23911762, z: 0.09904577, w: 0.89239913}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -320,7 +383,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1958675036
+--- !u!1 &1140111875
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,53 +391,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1958675039}
-  - component: {fileID: 1958675038}
-  - component: {fileID: 1958675037}
+  - component: {fileID: 1140111877}
+  - component: {fileID: 1140111876}
   m_Layer: 0
-  m_Name: Treatment Viewer
+  m_Name: Controls Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1958675037
+--- !u!114 &1140111876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958675036}
+  m_GameObject: {fileID: 1140111875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 417436079113f7a4a83cd914336503e0, type: 3}
+  m_Script: {fileID: 11500000, guid: d5d623635fe6b45478d29b88991d843f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: AlaAbuhadbeh.TeethViewer.Runtime::AlaAbuhadbeh.TeethViewer.ToothSelector
-  _camera: {fileID: 0}
-  _degreesPerPixel: 0.25
---- !u!114 &1958675038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958675036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6affd8a94fb07e4d8dc490c1c8894aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AlaAbuhadbeh.TeethViewer.Runtime::AlaAbuhadbeh.TeethViewer.TreatmentViewerController
-  _toothMaterial: {fileID: 2100000, guid: 43eb7eac305ef3a4684ed8d31b970d0b, type: 2}
-  _stageTime: 0
-  _autoPlay: 1
-  _stagesPerSecond: 0.6
---- !u!4 &1958675039
+  m_EditorClassIdentifier: AlaAbuhadbeh.TeethViewer.Runtime::AlaAbuhadbeh.TeethViewer.ControlsOverlay
+--- !u!4 &1140111877
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958675036}
+  m_GameObject: {fileID: 1140111875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -387,6 +431,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 87272694}
-  - {fileID: 1669845975}
-  - {fileID: 1958675039}
+  - {fileID: 362490846}
+  - {fileID: 878716797}
+  - {fileID: 475222917}
+  - {fileID: 1140111877}
